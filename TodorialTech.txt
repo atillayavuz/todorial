@@ -1,0 +1,28 @@
+
+Todorial
+
+----- Description -----
+A simple todo list application using Asp.Net Web Api 2 with Repository Pattern and Unit Of Work Pattern, MsSql Server, AngularJS, Css3, Html5, SASS
+
+
+-----  Backend ------
+
+Asp.Net Web Api 2
+MsSql Server
+EF Code First
+Repository Pattern
+Unit Of Work Pattern
+DTO Pattern ? ( Kullanmalı mıyız, handikapı var mıdır, Web api ile gerekli mi, tartışılabilir.)
+
+----- Frontend ------
+
+SASS
+Css3
+Html5
+AngularJs
+
+----- Proje Yapısı -----
+-Single Page Application
+-Item ve ItemList'ler olacak.
+-Sol kısımda Liste ekleyebileceğimiz bir alan olacak.
+-Sağ kısımda da seçili listeye item ekleyebileceğimiz bir alan olacak
