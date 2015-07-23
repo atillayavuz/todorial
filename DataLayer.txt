@@ -1,0 +1,47 @@
+	 KEEP IT SIMPLE STUPID
+
+Item
+-------------------------------
+Id
+ItemListId
+Content
+CreateDate
+UpdateDate
+DueDate (date)
+IsDeleted
+IsCompleted
+IsStarred
+
+V2
+Repeat
+RemindDate(datetime)
+CreatedBy 
+UpdatedBy 
+Notes
+AssignedTo
+Attachment
+
+
+
+ItemList
+----------------------------
+Id
+ListName
+
+V2
+Members
+Owner
+
+ItemListTag
+-------------------
+ItemListId
+TagId
+
+
+Tag
+----------
+Id
+Name
+
+User -v2
+----------------------------
