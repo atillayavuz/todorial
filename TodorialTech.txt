@@ -12,6 +12,7 @@ MsSql Server
 EF Code First
 Repository Pattern
 Unit Of Work Pattern
+Custom Exception Handling
 DTO Pattern ? ( Kullanmalı mıyız, handikapı var mıdır, Web api ile gerekli mi, tartışılabilir.)
 
 ----- Frontend ------
