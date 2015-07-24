@@ -50,3 +50,6 @@ Name
 
 User -v2
 ----------------------------
+Id
+UserName
+Password
