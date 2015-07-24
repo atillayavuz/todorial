@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Context\TodorialContext.cs" />
     <Compile Include="Domain\Abstract\BaseEntity.cs" />
+    <Compile Include="Domain\TodoItemListTag.cs" />
+    <Compile Include="Domain\Tag.cs" />
     <Compile Include="Domain\TodoItem.cs" />
     <Compile Include="Domain\TodoItemList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
