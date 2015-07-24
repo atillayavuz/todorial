@@ -2,9 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace Todorial.Data.Domain.Abstract
-{
-
-
+{ 
     public abstract class BaseEntity
     {
 
