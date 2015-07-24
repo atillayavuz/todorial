@@ -9,8 +9,7 @@ using Todorial.Data.Domain.Abstract;
 namespace Todorial.Data.Repositories
 {
     public interface IGenericRepository<T> where T : BaseEntity
-    {
-
+    { 
         IEnumerable<T> GetAll();
 
         IEnumerable<T> FindBy(Expression<Func<T, bool>> predicate);
