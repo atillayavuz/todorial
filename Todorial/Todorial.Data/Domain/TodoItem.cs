@@ -3,7 +3,7 @@ using Todorial.Data.Domain.Abstract;
 
 namespace Todorial.Data.Domain
 {
-    public class TodoItem :BaseEntity<Guid>
+    public class TodoItem :Entity<Guid>
     {
         public Guid TodoItemListId { get; set; }
 

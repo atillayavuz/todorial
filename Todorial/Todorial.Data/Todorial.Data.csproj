@@ -57,7 +57,11 @@
       <DependentUpon>201507240922534_InitializeDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Repositories\GenericRepository\GenericRepository.cs" />
+    <Compile Include="Repositories\GenericRepository\Interfaces\IGenericRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\Repository\Interfaces\ITodoItemRepository.cs" />
+    <Compile Include="Repositories\Repository\TodoItemRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201507240922534_InitializeDatabase.resx">
