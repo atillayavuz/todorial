@@ -8,8 +8,14 @@ namespace Todorial.BusinessLogic.Common
 {
     public abstract class EntityService<T> : IEntityService<T> where T : BaseEntity
     {
+        #region "Fields"
+
         IUnitOfWork _unitOfWork;
         IGenericRepository<T> _repository;
+
+        #endregion
+        
+        #region "Constructors"
 
         public EntityService(IUnitOfWork unitOfWork, IGenericRepository<T> repository)
         {
@@ -17,28 +23,43 @@ namespace Todorial.BusinessLogic.Common
             _repository = repository;
         }
 
+        #endregion
+
+        #region "Methods"
+
         public virtual void Create(T entity)
         {
             if (entity == null)
             {
                 throw new ArgumentNullException("entity");
             }
+
             _repository.Add(entity);
+
             _unitOfWork.Commit();
         }
 
-
         public virtual void Update(T entity)
         {
-            if (entity == null) throw new ArgumentNullException("entity");
+            if (entity == null)
+            {
+                throw new ArgumentNullException("entity");
+            }
+
             _repository.Edit(entity);
+
             _unitOfWork.Commit();
         }
 
         public virtual void Delete(T entity)
         {
-            if (entity == null) throw new ArgumentNullException("entity");
+            if (entity == null)
+            {
+                throw new ArgumentNullException("entity");
+            }
+
             _repository.Delete(entity);
+
             _unitOfWork.Commit();
         }
 
@@ -46,5 +67,7 @@ namespace Todorial.BusinessLogic.Common
         {
             return _repository.GetAll();
         }
+    
+        #endregion
     }
 }

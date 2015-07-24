@@ -5,11 +5,15 @@ namespace Todorial.Data.Context
 {
     public class TodorialContext : DbContext
     {
+        #region "Constructors"
+
         public TodorialContext()
             : base("name=DefaultConnection")
         {
 
         }
+
+        #endregion
 
         #region "Todo Items & Lists"
 

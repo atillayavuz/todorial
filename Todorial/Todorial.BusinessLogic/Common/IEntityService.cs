@@ -7,8 +7,9 @@ namespace Todorial.BusinessLogic.Common
      where T : BaseEntity
     {
         void Create(T entity);
-        void Delete(T entity); 
-        IEnumerable<T> GetAll();
+        void Delete(T entity);
         void Update(T entity);
+
+        IEnumerable<T> GetAll();
     }
 }

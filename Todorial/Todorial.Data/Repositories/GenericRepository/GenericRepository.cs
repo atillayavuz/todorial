@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq.Expressions;
 using Todorial.Data.Domain.Abstract;
 
 namespace Todorial.Data.Repositories
@@ -12,8 +11,14 @@ namespace Todorial.Data.Repositories
     public abstract class GenericRepository<T> : IGenericRepository<T>
           where T : BaseEntity
     {
+        #region "Fields"
+
         protected DbContext _entities;
         protected readonly IDbSet<T> _dbset;
+
+        #endregion
+
+        #region "Constructors"
 
         public GenericRepository(DbContext context)
         {
@@ -21,19 +26,10 @@ namespace Todorial.Data.Repositories
             _dbset = context.Set<T>();
         }
 
-        public virtual IEnumerable<T> GetAll()
-        {
+        #endregion
 
-            return _dbset.AsEnumerable<T>();
-        }
-
-        public IEnumerable<T> FindBy(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
-        {
-
-            IEnumerable<T> query = _dbset.Where(predicate).AsEnumerable();
-            return query;
-        }
-
+        #region "Methods"
+       
         public virtual T Add(T entity)
         {
             return _dbset.Add(entity);
@@ -53,5 +49,19 @@ namespace Todorial.Data.Repositories
         {
             _entities.SaveChanges();
         }
+
+        public virtual IEnumerable<T> GetAll()
+        {
+            return _dbset.AsEnumerable<T>();
+        }
+
+        public IEnumerable<T> FindBy(Expression<Func<T, bool>> predicate)
+        {
+
+            IEnumerable<T> query = _dbset.Where(predicate).AsEnumerable();
+            return query;
+        }
+
+        #endregion
     }
 }

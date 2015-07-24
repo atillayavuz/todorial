@@ -5,13 +5,22 @@ namespace Todorial.Data.UnitofWork
 {
     public sealed class UnitOfWork : IUnitOfWork
     {
+        #region "Fields"
+
         private DbContext _dbContext;
+
+        #endregion
+
+        #region "Constructors"
 
         public UnitOfWork(DbContext context)
         {
-
             _dbContext = context;
         }
+
+        #endregion
+
+        #region "Methods"
 
         public int Commit()
         {
@@ -35,5 +44,7 @@ namespace Todorial.Data.UnitofWork
                 }
             }
         }
+
+        #endregion
     }
 }
