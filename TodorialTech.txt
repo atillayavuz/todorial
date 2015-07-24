@@ -1,4 +1,4 @@
-
+﻿
 Todorial
 
 ----- Description -----
@@ -23,6 +23,6 @@ AngularJs
 
 ----- Proje Yapısı -----
 -Single Page Application
--Item ve ItemList'ler olacak.
+-Item ve ItemList'ler olacak. OK
 -Sol kısımda Liste ekleyebileceğimiz bir alan olacak.
 -Sağ kısımda da seçili listeye item ekleyebileceğimiz bir alan olacak
