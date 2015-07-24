@@ -1,5 +1,6 @@
 	 KEEP IT SIMPLE STUPID
 
+OK
 Item
 -------------------------------
 Id
@@ -12,6 +13,8 @@ IsDeleted
 IsCompleted
 IsStarred
 
+
+
 V2
 Repeat
 RemindDate(datetime)
@@ -22,7 +25,7 @@ AssignedTo
 Attachment
 
 
-
+OK
 ItemList
 ----------------------------
 Id
@@ -32,12 +35,14 @@ V2
 Members
 Owner
 
+
+OK
 ItemListTag
 -------------------
 ItemListId
 TagId
 
-
+OK
 Tag
 ----------
 Id
