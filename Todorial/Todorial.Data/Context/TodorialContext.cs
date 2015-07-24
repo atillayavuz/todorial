@@ -5,7 +5,8 @@ namespace Todorial.Data.Context
 {
     public class TodorialContext : DbContext
     {
-        public TodorialContext():base("DefaultConnection")
+        public TodorialContext()
+            : base("name=DefaultConnection")
         {
 
         }
