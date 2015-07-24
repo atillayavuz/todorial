@@ -26,3 +26,7 @@ AngularJs
 -Item ve ItemList'ler olacak. OK
 -Sol kısımda Liste ekleyebileceğimiz bir alan olacak.
 -Sağ kısımda da seçili listeye item ekleyebileceğimiz bir alan olacak
+
+
+----- Wiki -----
+Github'da bir wiki dosyası hazırlanmalı. Nasıl hazırlandığıyla ilgili detayları incelemeliyiz.
