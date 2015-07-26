@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todorial.API", "Todorial.API\Todorial.API.csproj", "{0B930A39-FDF7-4BBB-9537-2DBC32E32E56}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todorial.BusinessLogic", "Todorial.BusinessLogic\Todorial.BusinessLogic.csproj", "{3C0841BC-4861-45DA-BFCF-DD066E30C794}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todorial.Data", "Todorial.Data\Todorial.Data.csproj", "{A986B556-1024-44C2-82F0-38EF45B68B5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todorial.Presentation", "Todorial.Presentation\Todorial.Presentation.csproj", "{6DE5C028-6759-4BAF-83A6-5AEF0713CF15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{A986B556-1024-44C2-82F0-38EF45B68B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A986B556-1024-44C2-82F0-38EF45B68B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A986B556-1024-44C2-82F0-38EF45B68B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DE5C028-6759-4BAF-83A6-5AEF0713CF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE5C028-6759-4BAF-83A6-5AEF0713CF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE5C028-6759-4BAF-83A6-5AEF0713CF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE5C028-6759-4BAF-83A6-5AEF0713CF15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
