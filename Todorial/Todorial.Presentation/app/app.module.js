@@ -2,6 +2,12 @@
     'use strict';
 
     angular.module('app', [
-        'app.todoitem'
+        /* Our modules*/
+        'app.todoitem',
+
+        /* Angular Modules*/
+        'ngRoute'
+
+        /* 3rd Modules*/
     ])
 })();

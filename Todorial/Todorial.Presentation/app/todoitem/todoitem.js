@@ -9,5 +9,5 @@
 
     function TodoItem($scope) {
         $scope.title = "Create new todo item";
-    }
+    } 
 })();
