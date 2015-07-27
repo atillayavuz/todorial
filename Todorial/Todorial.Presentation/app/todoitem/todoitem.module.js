@@ -1,5 +1,7 @@
 ﻿(function () {
     'use strict';
-
-    angular.module('app.todoitem', []);
+     
+    angular.module('app.todoitem', [
+        'ngRoute'
+    ]);
 })();
