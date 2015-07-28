@@ -4,7 +4,7 @@ using Todorial.Data.Domain.Abstract;
 namespace Todorial.BusinessLogic.Common
 {
     public interface IEntityService<T>
-     where T : BaseEntity
+     where T : BaseRepositoryEntity
     {
         void Create(T entity);
         void Delete(T entity);

@@ -5,7 +5,7 @@ using Todorial.Data.Domain.Abstract;
 
 namespace Todorial.Data.Repositories
 {
-    public interface IGenericRepository<T> where T : BaseEntity
+    public interface IGenericRepository<T> where T : BaseRepositoryEntity
     {
         T Add(T entity);
         T Delete(T entity);

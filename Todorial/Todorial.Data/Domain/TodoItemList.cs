@@ -4,7 +4,7 @@ using Todorial.Data.Domain.Abstract;
 
 namespace Todorial.Data.Domain
 {
-    public class TodoItemList : Entity<Guid>
+    public class TodoItemList : BaseDomainEntity<Guid>
     {
         public string Name { get; set; }
 
