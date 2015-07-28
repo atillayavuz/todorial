@@ -2,13 +2,10 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace Todorial.Data.Domain.Abstract
-{ 
-    public abstract class BaseEntity
-    {
+{
 
-    }
-  
-    public abstract class Entity<T> : BaseEntity where T : struct
+
+    public abstract class BaseDomainEntity<T> : BaseRepositoryEntity where T : struct
     {
         [Key]
         public T Id { get; set; }

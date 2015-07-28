@@ -9,7 +9,7 @@ namespace Todorial.Data.Repositories
 {
 
     public abstract class GenericRepository<T> : IGenericRepository<T>
-          where T : BaseEntity
+          where T : BaseRepositoryEntity
     {
         #region "Fields"
 

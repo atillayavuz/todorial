@@ -3,7 +3,7 @@ using Todorial.Data.Domain.Abstract;
 
 namespace Todorial.Data.Domain
 {
-    public class Tag : Entity<Guid>
+    public class Tag : BaseDomainEntity<Guid>
     {
         public string Name { get; set; }
 

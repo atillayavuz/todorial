@@ -6,7 +6,7 @@ using Todorial.Data.UnitofWork;
 
 namespace Todorial.BusinessLogic.Common
 {
-    public abstract class EntityService<T> : IEntityService<T> where T : BaseEntity
+    public abstract class EntityService<T> : IEntityService<T> where T : BaseRepositoryEntity
     {
         #region "Fields"
 
